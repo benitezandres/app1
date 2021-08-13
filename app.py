@@ -11,7 +11,9 @@ def hi():
 def about():
     return 'About!!'
 
-
+@app.route('/test')
+def test():
+    return 'Test!'
 
 if __name__ == '__main__':
     app.run(debug=True,host='0.0.0.0') 
